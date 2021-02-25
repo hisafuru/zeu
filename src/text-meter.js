@@ -86,7 +86,8 @@ export default class TextMeter extends BaseComponent {
     this._ctx.rect(this._arrowWidth, this._pctHeight, this._meterWidth, this._meterHeight);
     this._ctx.stroke();
     this._ctx.closePath();
-
+    
+    /*
     // Draw percentage value
     this._ctx.fillStyle = this.markerBgColor;
 
@@ -111,6 +112,7 @@ export default class TextMeter extends BaseComponent {
       // right
       this.drawRightArrow();
     }
+    */
     // Calculate next position barX
     this._barX = Utility.getNextPos(this._barX, this._nextBarX, this.speed);
   }
